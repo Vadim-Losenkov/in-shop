@@ -1,0 +1,25 @@
+{
+  "name": "iternet-shop",
+  "version": "1.0.0",
+  "description": "internet shop layout",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vadim-Losenkov/morning-marketplace.git"
+  },
+  "keywords": [
+    "js",
+    "html",
+    "css",
+    "layout"
+  ],
+  "author": "Vadim Losenkov <vprog0729@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vadim-Losenkov/morning-marketplace/issues"
+  },
+  "homepage": "https://github.com/Vadim-Losenkov/morning-marketplace#readme"
+}
