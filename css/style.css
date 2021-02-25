@@ -1202,6 +1202,11 @@ button.catalog__filter-btnline {
   position: relative;
   height: 25px;
   width: 63px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  color: #c4c4c4;
+  letter-spacing: 0.07em;
 }
 
 .btn-checked .jq-checkbox {
@@ -1220,6 +1225,66 @@ button.catalog__filter-btnline {
   display: none;
 }
 
+.btn-checked .jq-checkbox.checked ~ .btn-checked__text {
+  color: #fff;
+}
+
 .btn-checked__text {
   position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-60%);
+  z-index: 5;
 }
+
+.filter-btn__send {
+  background: #F0F0F4;
+  padding: 16px 85px;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.12em;
+  color: #bdbec2;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.filter-btn__send--active {
+  background-color: #1c62cd;
+  color: #fff;
+}
+
+.aside-filter__item-btn {
+  text-align: center;
+}
+
+.filter__extra {
+  font-size: 13px;
+  line-height: 16px;
+  position: relative;
+  padding-right: 29px;
+  display: inline-block;
+  padding: 15px;
+}
+
+.filter__extra::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 4px;
+  width: 12px;
+  height: 8px;
+  background-image: url('../images/arrow-down.svg');
+  transform: rotate(0deg);
+  transition: all .3s;
+}
+
+.filter__extra-content {
+  display: none;
+}
+
+.filter__extra.filter__item-drop--active::after {
+  transform: rotate(180deg);
+}
+/* ready */
