@@ -37,6 +37,23 @@ $(function () {
     $(this).next().slideToggle(200)
   })
 
+  const filterBtnActiveClass = 'catalog__filter-button--active'
+  const filterBtnLine = $('.catalog__filter-btnline')
+  const filterBtnGrid = $('.catalog__filter-btngrid')
+  const productItem = $('.product-item__wrapper')
+
+  filterBtnGrid.on('click', function() {
+    $(this).addClass(filterBtnActiveClass)
+    filterBtnLine.removeClass(filterBtnActiveClass)
+    productItem.removeClass('product-item__wrapper--list')
+  })
+
+  filterBtnLine.on('click', function() {
+    $(this).addClass(filterBtnActiveClass)
+    filterBtnGrid.removeClass(filterBtnActiveClass)
+    productItem.addClass('product-item__wrapper--list')
+  })
+
   $(".js-range-slider").ionRangeSlider({
     grid: false,
     type: 'double',
