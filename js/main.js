@@ -31,6 +31,14 @@ $(function () {
 
   })
 
+    responsive: [
+      {
+        breakpoint: 968,
+        settings: {
+          arrows: false
+        }
+      }
+    ]
   const fav = $('.product-item__favorite')
   fav.on('click', function(){
     $(this).toggleClass('product-item__favorite--active')
@@ -41,6 +49,33 @@ $(function () {
     slidesToScroll: 1,
     prevArrow: '<button class="product-slider__slider-btn product-slider__slider-btnprev"><img src="images/arrow-black-left.svg" alt=""></button>',
     nextArrow: '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="images/arrow-black-right.svg" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 1300,
+        settings: {
+          arrows: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 870,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 590,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+    ]
   })
 
   $('.filter-style').styler();

@@ -1,3 +1,13 @@
+@media (max-width: 1300px) {
+  .product__more {
+    margin-top: 60px;
+  }
+  .product-slider__item{
+    display: flex!important;
+    justify-content: space-between!important;
+  }
+}
+
 @media (max-width: 1200px) {
   .banner-section__inner {
     justify-content: space-around;
@@ -13,6 +23,9 @@
   }
   .banner-section__slider {
     max-width: 600px;
+  }
+  .categorirs__inner {
+    justify-content: space-around;
   }
 }
 
@@ -144,5 +157,8 @@
 @media (max-width: 440px) {
   .banner-section__slider-img {
     min-height: 164px;  
+  }
+  .categorirs__item {
+    
   }
 }

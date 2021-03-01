@@ -276,7 +276,7 @@ body {
   padding: 0 5px;
 }
 
-.slick-active li button {
+.slick-dots .slick-active button {
   background-color: #ffffff;
 }
 .sale-item {
@@ -1631,4 +1631,16 @@ button.catalog__filter-btnline {
   border-radius: 3px;
   padding: 9px 40px;
   border: none;
+}
+
+.product-slider .slick-dots {
+  bottom: -30px;
+}
+.product-slider .slick-dots button {
+  background-color: #c4c4c4;
+}
+
+.product-slider .slick-dots .slick-active button {
+  background-color: #1c62cd;
+  outline: none;
 }
