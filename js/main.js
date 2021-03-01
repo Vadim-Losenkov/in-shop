@@ -4,6 +4,14 @@ $(function () {
     dots: true,
     prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"><img src="images/arrow-left.svg" alt=""></button>',
     nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnnext"><img src="images/arrow-right.svg" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 968,
+        settings: {
+          arrows: false
+        }
+      }
+    ]
   })
 
   const tab = $('.tab')
@@ -61,5 +69,17 @@ $(function () {
     max: 500000,
     from: 140000,
     to: 400000
+  })
+  
+  $('.rate-yo').rateYo({
+    ratedFill: '#1c62cd',
+    spacing: '7px',
+    normalFill: '#c4c4c4',
+    readOnly: true,
+  })
+  
+  $('.menu__btn').on('click', () => {
+    $('.menu-mobile__list').toggleClass('menu-mobile__list--active')
+    $('.menu__btn').toggleClass('active')
   })
 })

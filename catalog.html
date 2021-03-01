@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -156,11 +157,11 @@
         <aside class="catalog__inner-aside aside-filter">
           <div class="tabs-wrapper">
             <div class="tabs aside-filter__tabs">
-              <a href="#" class="tab aside-filter__tab tab--active"><span>Параметры</span></a>
-              <a href="#" class="tab aside-filter__tab"><span>по марке</span></a>
+              <a href="#filter-1" class="tab aside-filter__tab tab--active"><span>Параметры</span></a>
+              <a href="#filter-2" class="tab aside-filter__tab"><span>по марке</span></a>
             </div>
             <div class="tabs-container">
-              <div class="tabs-content aside-filter__tabs-content tabs-content--active">
+              <div id="filter-1" class="tabs-content aside-filter__tabs-content tabs-content--active">
                 <form class="aside-filter__form">
                   <ul class="aside-filter__list">
                     <li class="aside-filter__item-drop">
@@ -371,7 +372,7 @@
                   </ul>
                 </form>
               </div>
-              <div class="tabs-content aside-filter__tabs-content">content-2</div>
+              <div id="filter-2" class="tabs-content aside-filter__tabs-content">content-2</div>
             </div>
           </div>
         </aside>
@@ -756,15 +757,4 @@
 
 </html>
 
-<!-- <div class="tabs-wrapper">
-  <div class="tabs">
-    <a href="#" class="tab--active">
-
-    </a>
-  </div>
-  <div class="tabs-container">
-    <div class="tabs-content">
-
-    </div>
-  </div>
-</div> -->
+<!--  -->
