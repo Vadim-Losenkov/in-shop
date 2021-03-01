@@ -18,11 +18,17 @@ $(function () {
   tab.on('click', function (e) {
     e.preventDefault()
 
-    $($(this).siblings()).removeClass('tab--active')
-    $($(this).parent().parent().siblings().find('div')).removeClass('tabs-content--active')
-
+    if ($($(this).parent())[0].classList[0] === 'mobile-overflow') {
+      $($(this).siblings()).removeClass('tab--active')
+      $($(this).parent().parent().siblings().find('div')).removeClass('tabs-content--active')
+    } else {
+      $($(this).siblings()).removeClass('tab--active')
+      $($(this).parent().siblings().find('div')).removeClass('tabs-content--active')
+    }
+    
     $(this).addClass('tab--active')
     $($(this).attr('href')).addClass('tabs-content--active')
+
   })
 
   const fav = $('.product-item__favorite')
