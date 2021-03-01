@@ -1,5 +1,4 @@
 $(function () {
-
   $('.banner-section__slider').slick({
     dots: true,
     prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"><img src="images/arrow-left.svg" alt=""></button>',
@@ -20,14 +19,14 @@ $(function () {
     e.preventDefault()
 
     $($(this).siblings()).removeClass('tab--active')
-    $($(this).parent().siblings().find('div')).removeClass('tabs-content--active')
+    $($(this).parent().parent().siblings().find('div')).removeClass('tabs-content--active')
 
     $(this).addClass('tab--active')
     $($(this).attr('href')).addClass('tabs-content--active')
   })
 
   const fav = $('.product-item__favorite')
-  $('.product-item__favorite').on('click', function(){
+  fav.on('click', function(){
     $(this).toggleClass('product-item__favorite--active')
   })
 

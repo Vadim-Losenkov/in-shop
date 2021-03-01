@@ -95,6 +95,9 @@
     margin-bottom: 25px;
     text-align: center;
   }
+  banner-section__item sale-item {
+    margin-bottom: 40px;
+  }
   .mobile-overflow {
     width: 1000px;
   }
