@@ -524,6 +524,7 @@ body {
   transition: all 0.3s;
   width: 100%;
   outline: none;
+ 
 }
 
 .product-item__title {
@@ -966,6 +967,10 @@ button.catalog__filter-btnline {
 
 .pagination-list__item a {
   display: block;
+}
+
+.aside__btn {
+  display: none;
 }
 
 .aside-filter__tabs {

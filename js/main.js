@@ -17,28 +17,14 @@ $(function () {
 
   tab.on('click', function (e) {
     e.preventDefault()
-
-    if ($($(this).parent())[0].classList[0] === 'mobile-overflow') {
-      $($(this).siblings()).removeClass('tab--active')
-      $($(this).parent().parent().siblings().find('div')).removeClass('tabs-content--active')
-    } else {
-      $($(this).siblings()).removeClass('tab--active')
-      $($(this).parent().siblings().find('div')).removeClass('tabs-content--active')
-    }
+    
+    $($(this).siblings()).removeClass('tab--active')
+    $($(this).parent().parent().siblings().find('div')).removeClass('tabs-content--active')
     
     $(this).addClass('tab--active')
     $($(this).attr('href')).addClass('tabs-content--active')
 
   })
-
-    responsive: [
-      {
-        breakpoint: 968,
-        settings: {
-          arrows: false
-        }
-      }
-    ]
   const fav = $('.product-item__favorite')
   fav.on('click', function(){
     $(this).toggleClass('product-item__favorite--active')
@@ -61,18 +47,24 @@ $(function () {
         breakpoint: 1200,
         settings: {
           slidesToShow: 3,
+          arrows: false,
+          dots: true
         }
       },
       {
         breakpoint: 870,
         settings: {
           slidesToShow: 2,
+          arrows: false,
+          dots: true
         }
       },
       {
         breakpoint: 590,
         settings: {
           slidesToShow: 1,
+          arrows: false,
+          dots: true
         }
       },
     ]
@@ -121,5 +113,14 @@ $(function () {
   $('.menu__btn').on('click', () => {
     $('.menu-mobile__list').toggleClass('menu-mobile__list--active')
     $('.menu__btn').toggleClass('active')
+  })
+  
+  $('.footer__topdrop').on('click', function () {
+    $(this).next().slideToggle()
+    $(this).toggleClass('open')
+  })
+  
+  $('.aside__btn').on('click', function () {
+    $(this).next().slideToggle()
   })
 })
