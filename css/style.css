@@ -1649,3 +1649,7 @@ button.catalog__filter-btnline {
   background-color: #1c62cd;
   outline: none;
 }
+
+.product-card__btn-moblie {
+  display: none;
+}
