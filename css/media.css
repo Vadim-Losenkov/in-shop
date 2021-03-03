@@ -42,7 +42,7 @@
     margin-right: 20px;
   }
   .card__input-search {
-    
+    margin-right: 0;
   }
 }
 
@@ -166,6 +166,32 @@
   }
   .catalog__filter-btn {
     margin-top: 30px;
+  }
+  .card__top-line label {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+    margin-left: 0;
+  }
+  .card__list-item {
+    display: block;
+  }
+  .card__list-item div{
+    margin-bottom: 15px;
+  }
+  .card__list-item div.workhours:first-child {
+    margin-bottom: 0px;
+  }
+  .card__list-item div.card__list-available {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .card__list-item div.card__list-num {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .card__list-itemtitle {
+    display: none;
   }
 }
   
@@ -304,6 +330,9 @@
   }
   .footer-form__btn {
     padding: 11px 10px;
+  }
+  .footer__topdrop {
+    pointer-events: auto;
   }
 }
 
